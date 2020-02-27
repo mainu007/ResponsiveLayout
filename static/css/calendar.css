@@ -1,0 +1,83 @@
+.datepicker {
+  width: 318px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+  padding: 20px;
+  margin-top: 10px;
+}
+.datepicker::before {
+  content: "";
+  display: inline-block;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #ccc;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -9px;
+  left: 22px;
+}
+.datepicker::after {
+  content: "";
+  display: inline-block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ffffff;
+  position: absolute;
+  top: -8px;
+  left: 23px;
+}
+.datepicker > div {
+  display: none;
+}
+.datepicker .table-condensed {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.datepicker thead span {
+}
+.datepicker .prev,
+.datepicker .next {
+}
+.datepicker .next {
+  /* float: right; */
+}
+.datepicker thead span {
+  border-radius: 3px;
+  border: 1px solid #e4e7e7;
+  display: block;
+  line-height: 0px;
+  pointer-events: none;
+  padding: 5px 0;
+}
+.datepicker thead svg {
+  width: 19px;
+  height: 19px;
+  fill: #82888a;
+  pointer-events: none;
+}
+.datepicker thead .switch {
+  color: var(--main-txt);
+  font-size: 16px;
+}
+.datepicker thead .dow {
+  color: var(--main-txt);
+  font-weight: 400;
+  font-size: 13px;
+}
+.datepicker tbody td {
+  border: 1px solid #e4e7e7;
+  width: 27px;
+  height: 38px;
+  font-size: 14px;
+  transition: 0.3s all;
+}
+.datepicker td.day.disabled {
+  color: #cacccd;
+}
+.datepicker tbody td:hover:not(.disabled) {
+  background: #eee;
+  cursor: pointer;
+}
