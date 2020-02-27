@@ -509,6 +509,17 @@ dody > .layout {
   justify-content: space-between;
   font-size: 15px;
 }
+.reviews .date-bar .databar-content input {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+.reviews .date-bar .databar-content input::placeholder{
+  color: var(--main-txt);
+}
+.reviews .date-bar .databar-content #endDate {
+  text-align: right;
+}
 .reviews .date-bar::before {
   content: "";
   width: 1px;
@@ -534,6 +545,19 @@ dody > .layout {
   left: 15px;
   top: auto;
   fill: var(--main-bg);
+}
+/* datepicker style change */
+.datepicker {
+  margin-top: 17px;
+  border: none;
+  box-shadow: rgba(26, 26, 29, 0.3) 0px 15px 46px -10px;
+  border-radius: 0;
+}
+.datepicker::before {
+  border-bottom-color: transparent;
+}
+.datepicker::after {
+  border-bottom-color: transparent;
 }
 .reviews .room-bar {
   width: 100%;

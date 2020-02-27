@@ -1,3 +1,11 @@
+/* variable */
+:root {
+  --main-bg: #008489;
+  --main-txt: #2c2c2c;
+  --hover-main-bg: #e6e6e6;
+  --secondary-txt: #909090;
+  --white: #ffffff;
+}
 /* default style */
 html,
 body {
@@ -225,6 +233,18 @@ a {
   line-height: 18px;
   letter-spacing: 0.2px;
   color: var(--main-txt);
+}
+/* calender style change */
+.datepicker {
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+}
+.datepicker::before {
+  border-bottom-color: #ccc;
+}
+.datepicker::after {
+  border-bottom-color: var(--white);
 }
 /* room count */
 .room-count .guest {
