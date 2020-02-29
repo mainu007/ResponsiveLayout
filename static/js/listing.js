@@ -169,16 +169,8 @@ function eventClose(x) {
 }
 //menu container code end
 
-//checkbox mark code start
-function checkboxMark(section, checkbox) {
-  let popupSection = document.querySelector(section);
-  let checkBoxInput = popupSection.querySelectorAll(checkbox);
-  for (let i = 0; i < checkBoxInput.length; i++) {
-    checkBoxInput[i].addEventListener("click", () => {
-      checkBoxInput[i].nextElementSibling.classList.toggle("mark");
-    });
-  }
-}
+//checkbox import
+import { checkboxMark } from "./checkbox.js";
 checkboxMark("#popupSection", ".checkbox-input");
 //checkbox accordion
 checkboxMark("#filterDrawer", ".checkbox-input");

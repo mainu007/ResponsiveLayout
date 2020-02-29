@@ -27,9 +27,6 @@ a {
   padding: 30px 16px 27px !important;
   border-bottom: 3px solid var(--main-bg);
 }
-.topnav .menu_bar .nav-sign li a {
-  color: var(--main-txt);
-}
 .topnav .menu_bar .menu_sign ul li:first-child a {
   color: var(--main-txt);
 }

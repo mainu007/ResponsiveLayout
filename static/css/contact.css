@@ -1,0 +1,200 @@
+/* variable */
+:root {
+  --main-bg: #008489;
+  --main-txt: #2c2c2c;
+  --hover-main-bg: #e6e6e6;
+  --secondary-txt: #909090;
+  --white: #ffffff;
+}
+.contact_section {
+  width: 100%;
+  padding: 0 30px;
+}
+.contact_section .contact_content {
+  width: 100%;
+  padding: 25px 0 30px;
+}
+.contact_section .contact_content > h2 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 22px;
+  color: var(--main-txt);
+}
+.contact_section .content_row {
+  margin: 0 -15px;
+}
+.contact_section .create_section {
+  padding: 0 15px;
+}
+.contact_section .create_section .label {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 39.9999px;
+  vertical-align: middle;
+}
+.contact_section .create_section .label label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--main-txt);
+}
+.contact_section .messege_area {
+  margin-bottom: 24px;
+}
+.contact_section .messege_area textarea {
+  width: 100%;
+  min-height: 115px;
+  border: 1px solid var(--hover-main-bg);
+  border-radius: 3px;
+  line-height: 1.5;
+  padding: 4px 11px;
+  vertical-align: bottom;
+  outline: none;
+  resize: none;
+}
+.contact_section .create_section .input input {
+  width: 100%;
+  height: 47px;
+  padding: 6px 11px;
+  border: 1px solid var(--hover-main-bg);
+  border-radius: 3px;
+  outline: none;
+}
+.contact_section .create_section .contact_row {
+}
+.contact_section .contact_row .contact_clumn {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.contact_section .contact_row .contact_clumn:first-child {
+  padding-left: 0;
+}
+.contact_section .contact_row .contact_clumn:last-child {
+  padding-right: 0;
+}
+.contact_section .checkbox-list:first-child {
+  margin-top: 0;
+}
+.contact_section .checkbox-list:last-child {
+  margin-bottom: 0;
+}
+.contact_section span {
+  font-size: 15px;
+  color: var(--main-txt);
+}
+.contact_section .save_email {
+  margin-bottom: 41px;
+}
+.contact_section .checkbox_container {
+  position: relative;
+  top: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+.contact_section .checkbox_container + span {
+  padding: 0 6px;
+  font: 15px;
+  color: var(--main-txt);
+}
+.contact_section .checkbox-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+  margin: 0;
+}
+.contact_section .customize_checkbox {
+  position: relative;
+  top: -0.09em;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: var(--white);
+  border: 1px solid rgb(144, 144, 144);
+  display: block;
+  border-radius: 2px;
+}
+.contact_section .customize_checkbox.mark {
+  background: var(--main-bg);
+}
+.contact_section .customize_checkbox.mark::after {
+  content: "";
+  width: 5.71428571px;
+  height: 9.14285714px;
+  border: 2px solid var(--white);
+  border-top: none;
+  border-left: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 21%;
+  transform: rotate(45deg) scale(1) translate(-50%, -50%);
+}
+.contact_section .submit_btn {
+  background-color: var(--main-bg);
+  color: #fff;
+  height: 47px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0 28px;
+}
+.contact_section .info_section {
+  padding: 0 15px;
+}
+.contact_section .info_messege {
+  width: 100%;
+  padding: 30px;
+  background: #f7f7f7;
+  border-radius: 3px;
+}
+.contact_section .info_section .info_messege p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+.contact_section .info_section .info_messege h3 {
+  margin: 30px 0 0 0;
+  color: var(--main-txt);
+  font-weight: 700;
+}
+.contact_section .info_section .info_messege h3:first-child {
+  margin-top: 0;
+}
+
+/* responsive */
+@media (min-width: 768px) {
+  .contact_section .contact_row .contact_clumn {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .contact_section .create_section {
+    width: 66.6666%;
+    flex: 0 0 auto;
+    float: left;
+  }
+  .contact_section .info_section {
+    width: 33.3333%;
+    flex: 0 0 auto;
+    float: left;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .contact_section {
+    padding: 0 75px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contact_section .create_section {
+    margin-bottom: 40px;
+  }
+}

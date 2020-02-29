@@ -510,6 +510,7 @@ dody > .layout {
   font-size: 15px;
 }
 .reviews .date-bar .databar-content input {
+  width: 100%;
   border: none;
   outline: none;
   background-color: inherit;
@@ -549,7 +550,6 @@ dody > .layout {
 /* datepicker style change */
 .datepicker {
   margin-top: 17px;
-  border: none;
   box-shadow: rgba(26, 26, 29, 0.3) 0px 15px 46px -10px;
   border-radius: 0;
 }
