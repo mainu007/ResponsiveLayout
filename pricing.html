@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="static/media/titileIcon/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/pricing.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- head section start -->
+      <header class="header_section">
+        <div class="sticky_outer_wrapper">
+          <div class="sticky_inner_wrapper">
+            <nav class="topnav">
+              <div class="banner">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="static/media/logo/logo.svg" alt="" />
+                  </a>
+                </div>
+                <div class="search-bar">
+                  <svg
+                    stroke="currentColor"
+                    fill="#595959"
+                    stroke-width="0"
+                    viewBox="0 0 384 512"
+                    class="icon-left"
+                    height="14"
+                    width="14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                    ></path>
+                  </svg>
+                  <input type="text" placeholder='Try "Thailand, Asia"' />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 144.083 144"
+                    enable-background="new 0 0 144.083 144"
+                    class="icon-right"
+                  >
+                    <path
+                      d="M117.292,69h-13.587C102.28,53.851,90.19,41.761,75.042,40.337V26.5h-6v13.837C53.893,41.761,41.802,53.851,40.378,69  H26.792v6h13.587c1.425,15.148,13.515,27.238,28.663,28.663V117.5h6v-13.837C90.19,102.238,102.28,90.148,103.705,75h13.587V69z   M72.042,97.809c-14.23,0-25.809-11.578-25.809-25.809c0-14.231,11.578-25.809,25.809-25.809S97.85,57.769,97.85,72  C97.85,86.23,86.272,97.809,72.042,97.809z"
+                    ></path>
+                    <path
+                      d="M72.042,52.541c-10.729,0-19.459,8.729-19.459,19.459s8.729,19.459,19.459,19.459S91.5,82.729,91.5,72  S82.771,52.541,72.042,52.541z M72.042,85.459c-7.421,0-13.459-6.037-13.459-13.459c0-7.421,6.038-13.459,13.459-13.459  S85.5,64.579,85.5,72C85.5,79.422,79.462,85.459,72.042,85.459z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu_bar">
+                <div class="nav_menu">
+                  <ul>
+                    <li><a href="index.html">Hotels</a></li>
+                    <li><a href="listing.html">Listing</a></li>
+                    <li><a href="agent.html">Agent</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                  </ul>
+                </div>
+                <div class="menu_sign">
+                  <ul>
+                    <li><a href="#" class="default-btn">Sign in</a></li>
+                    <li><a href="#" class="default-btn sign_up">Sign up</a></li>
+                  </ul>
+                </div>
+              </div>
+              <button class="sidenav_show_btn" id="sidenavShowButton">
+                <span style="height: 2px;"></span>
+                <span style="height: 2px;"></span>
+                <span style="height: 2px;"></span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- head section end -->
+
+      <!-- main section -->
+      <main class="layout_content">
+        <div class="pricing_section">
+          <div class="pricing_title">
+            <h2>Select Your Pricing Plan</h2>
+            <p>
+              Simple Transparent pricing for everyone, whether you are local
+              hotel owner or an agent.
+            </p>
+            <div class="title_btn">
+              <button class="default-btn" id="monthly">Monthly</button>
+              <button class="default-btn active" id="annually">Annually</button>
+            </div>
+          </div>
+          <div class="pricing_container">
+            <div class="pricing_card">
+              <div class="head pricing_title">
+                <h2>Basic Plan</h2>
+                <p class="price"><strong></strong><span>/per month</span></p>
+              </div>
+              <ul class="item_list">
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Ultimate campaigns</span>
+                </li>
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Basic donner data</span>
+                </li>
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Team fundraising</span>
+                </li>
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Multi tasking</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Multi team tasking</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Basic registration & Ticketing</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Basic theming</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Email Reciept</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Expensive donor data</span>
+                </li>
+              </ul>
+              <div class="select_btn">
+                <button class="default-btn">Select Plan</button>
+              </div>
+            </div>
+            <div class="pricing_card">
+              <div class="head pricing_title">
+                <h2>Standard Plan</h2>
+                <p class="price"><strong></strong><span>/per month</span></p>
+              </div>
+              <ul class="item_list">
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Ultimate campaigns</span>
+                </li>
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Basic donner data</span>
+                </li>
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Team fundraising</span>
+                </li>
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Multi tasking</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Multi team tasking</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Basic registration & Ticketing</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Basic theming</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Email Reciept</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Expensive donor data</span>
+                </li>
+              </ul>
+              <div class="select_btn">
+                <button class="default-btn">Select Plan</button>
+              </div>
+            </div>
+            <div class="pricing_card">
+              <div class="head pricing_title">
+                <h2>Premium Plan</h2>
+                <p class="price"><strong></strong><span>/per month</span></p>
+              </div>
+              <ul class="item_list">
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Ultimate campaigns</span>
+                </li>
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Basic donner data</span>
+                </li>
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Team fundraising</span>
+                </li>
+                <li>
+                  <i class="icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="check-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Multi tasking</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Multi team tasking</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Basic registration & Ticketing</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Basic theming</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Email Reciept</span>
+                </li>
+                <li>
+                  <i class="icon cross">
+                    <svg
+                      viewBox="64 64 896 896"
+                      class=""
+                      data-icon="close-circle"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>Expensive donor data</span>
+                </li>
+              </ul>
+              <div class="select_btn">
+                <button class="default-btn">Select Plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div style="height: 33px;"></div>
+    </div>
+
+    <!-- js -->
+    <script type="module" src="static/js/pricing.js"></script>
+    <!-- sidenav start -->
+    <div class="mobile_header">
+      <div class="overlay"></div>
+      <div class="sidenav" id="sideNav">
+        <div class="header">
+          <button class="closebtn" id="slidenavCloseButton">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="sign-menu">
+          <li><a href="#" class="default-btn">Sign in</a></li>
+          <li>
+            <a href="#" class="default-btn signup">Sign up</a>
+          </li>
+        </ul>
+        <ul class="main-menu">
+          <li><a href="index.html">Hotels</a></li>
+          <li><a href="listing.html">Listing</a></li>
+          <li><a href="pricing.html" class="active">Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- sidenav end -->
+  </body>
+</html>

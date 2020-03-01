@@ -19,6 +19,7 @@ a {
 .topnav {
   position: relative;
   background-color: var(--white);
+  border-bottom: 1px solid #e6e6e6;
 }
 .topnav .menu_bar .nav_menu a {
   color: var(--main-txt);

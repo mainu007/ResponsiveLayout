@@ -29,7 +29,3 @@ imageSliderBtnPrev.forEach(element => {
 import { favoriteButton } from "./favoritebutton.js";
 favoriteButton();
 //favorite button end
-
-//contact checkbox import
-import { checkboxMark } from "./checkbox.js";
-checkboxMark(".save_email", ".checkbox-input");

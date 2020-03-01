@@ -19,6 +19,7 @@ a {
 .topnav {
   position: relative;
   background-color: var(--white);
+  border-bottom: 1px solid #e6e6e6;
 }
 .topnav .menu_bar .nav_menu a {
   color: var(--main-txt);
@@ -39,7 +40,6 @@ a {
 .popup_section {
   width: 100%;
   min-height: 70px;
-  border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   display: flex;
   justify-content: space-between;

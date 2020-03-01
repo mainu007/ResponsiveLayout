@@ -112,8 +112,9 @@ button:focus {
 .default-btn {
   display: inline-flex;
   border: none;
-  padding: 0 15px;
   font-size: 15px;
+  font-family: "Lato", sans-serif;
+  padding: 0 15px;
   color: var(--main-txt);
   align-items: center;
   border-radius: 3px;
@@ -515,7 +516,7 @@ dody > .layout {
   outline: none;
   background-color: inherit;
 }
-.reviews .date-bar .databar-content input::placeholder{
+.reviews .date-bar .databar-content input::placeholder {
   color: var(--main-txt);
 }
 .reviews .date-bar .databar-content #endDate {
