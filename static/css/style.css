@@ -136,11 +136,11 @@ a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-dody > .layout {
+/* body > .layout {
   height: 100vh;
   background-color: var(--white);
   overflow: hidden;
-}
+} */
 /* header section start */
 .header_section {
   width: 100%;

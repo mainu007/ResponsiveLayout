@@ -184,6 +184,7 @@ a {
 }
 .popup .customize_checkbox.mark {
   background: var(--main-bg);
+  border-color: var(--main-bg);
 }
 .popup .customize_checkbox.mark::after {
   content: "";
