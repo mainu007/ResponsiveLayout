@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="static/media/titileIcon/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in</title>
+    <title>Sign up</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="static/css/sign_in.css" />
   </head>
+
   <body>
     <section class="layout">
       <main class="layout_content">
@@ -24,24 +25,41 @@
                 />
               </a>
             </div>
-            <h2 class="title_h2">Welcome Back</h2>
-            <p class="title_para">Please Log in to your account</p>
+            <h2 class="title_h2">Welcome To TripFinder</h2>
+            <p class="title_para">Please Register for your account</p>
             <div class="input_field">
               <form>
                 <div class="email_field">
-                  <input type="email" placeholder="dummy@dummy.io" />
+                  <input type="text" placeholder="Username" required />
+                </div>
+                <div class="email_field">
+                  <input type="email" placeholder="Email" required />
+                </div>
+                <div class="email_field">
+                  <input type="password" placeholder="Password" required />
                 </div>
                 <div class="text_field">
-                  <input type="text" placeholder="Type anything..." />
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    required
+                  />
                 </div>
                 <div class="forget_remember">
-                  <div class="remember_container">
+                  <div class="remember_container sign_up">
                     <span class="switch_container">
                       <button type="button" class="switch rememberbtn"></button>
                     </span>
                     <span class="remember">Remember Me</span>
                   </div>
-                  <a href="#" class="forget_pass">Forget Password</a>
+                  <div class="remember_container sign_up">
+                    <span class="switch_container">
+                      <button type="button" class="switch rememberbtn"></button>
+                    </span>
+                    <span class="remember"
+                      >I agree with terms and condtions</span
+                    >
+                  </div>
                 </div>
                 <button class="default-btn login_btn">
                   <svg
@@ -57,12 +75,12 @@
                       d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"
                     ></path>
                   </svg>
-                  <span>Login</span>
+                  <span>Register</span>
                 </button>
               </form>
             </div>
             <div class="or_login_with">
-              <span class="or_login_text">Or Log in With</span>
+              <span class="or_login_text">Or Register Up With</span>
             </div>
             <div class="social_row">
               <div class="social_column">
@@ -153,8 +171,8 @@
               </div>
             </div>
             <p class="registration">
-              Don't Have an Account?
-              <a href="sign_up.html">Registration</a>
+              Already Have an Account!
+              <a href="sign_in.html">Login</a>
             </p>
           </div>
           <div class="full_height_bg"></div>

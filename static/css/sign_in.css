@@ -136,15 +136,20 @@ body {
   display: flex;
   align-items: center;
 }
+.sign_section .remember_container.sign_up {
+  margin: 7px 0;
+}
 .sign_section .forget_remember {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 41px 0;
+  flex-wrap: wrap;
 }
 .sign_section .switch_container {
   position: relative;
   margin-right: 10px;
+  line-height: 40px;
 }
 .sign_section .switch_container .switch {
   display: inline-block;
@@ -158,12 +163,6 @@ body {
   vertical-align: middle;
   transition: all 0.36s;
 }
-.sign_section .switch_container .switch.active::after {
-  transform: translateX(calc(100% - 1px));
-}
-.sign_section .switch_container .switch.active {
-  background-color: var(--main-bg);
-}
 .sign_section .switch_container .switch::after {
   content: "";
   width: 17px;
@@ -175,6 +174,13 @@ body {
   left: 1px;
   box-shadow: 0 2px 4px 0 rgba(0, 35, 11, 0.2);
   transition: all 0.36s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+.sign_section .switch_container .switch.active::after {
+  left: calc(100% - 1px);
+  transform: translateX(-100%);
+}
+.sign_section .switch_container .switch.active {
+  background-color: var(--main-bg);
 }
 .sign_section .remember {
   font-size: 15px;
@@ -244,6 +250,59 @@ body {
 .sign_section .social_row .google_plus {
   background: #dd4b39;
 }
+.sign_section .social_btn {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.sign_section .social_btn.active {
+  padding-left: 29px;
+}
+.sign_section .social_btn.active::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: var(--white);
+  opacity: 0.35;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+.sign_section .social_btn i {
+  line-height: 1;
+  transition: margin-left 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.sign_section .social_btn.active i {
+  margin-left: -6px;
+}
+/* .sign_section .social_btn.active i {
+  margin-left: -14px;
+} */
+.sign_section .social_btn i svg {
+  display: none;
+  vertical-align: middle;
+}
+.sign_section .social_btn.active i svg {
+  display: block;
+  animation: loadingCircle 1s linear infinite;
+  pointer-events: none;
+}
+.sign_section .social_btn span {
+  line-height: 1.5;
+  margin-left: 8px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+/* button loading animation circle */
+@keyframes loadingCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .sign_section .registration {
   font-size: 15px;
   font-weight: 700;
